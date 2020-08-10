@@ -66,7 +66,7 @@ function tick (){
         let secs = Math.floor(( t % (1000* 60 * 60 * 24)) / 1000);
         if( secs < 10) { secs = "0" + secs; }
 
-        let time = "${days} : ${hours} : ${mins} : ${secs}";
+        let time = days + " : " + hours + " : " + mins + " : " + secs;
 
         document.querySelector(".countdown").innerHTML = time;
     }
