@@ -12,6 +12,7 @@ let timer = setInterval(tick, 1000);
 counterBtn.addEventListener('click', countUp);
 secCountBtn.addEventListener('click', secCountUp);
 
+
 function countUp(){
     countNum.innerHTML ++;
 }
