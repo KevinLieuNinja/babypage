@@ -13,62 +13,94 @@
 
 <body>
     <div class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <ul class="navbar-nav bg-secondary col-xl-12">
+        <ul class="navbar-nav col-xl-12">
             <li class="nav-item"> <a href="#aboutUs" class="nav-link"> About </a> </li>
             <li class="nav-item"> <a href="#blogDiv" class="nav-link"> Blog </a> </li>
             <li class="nav-item"> <a href="#regDiv" class="nav-link"> Registry </a> </li>
         </ul>
     </div>
+    <!-- counter -->
+    <header class="container">
+        <div class="content">
+            <h1 class="mb-0">COMING SOON</h1>
+            <div class="countdown mt-0"> 00 : 00 : 00 : 00 </div>
+        </div>
+    </header>
+    <!-- About US section -->
+    <section>
+        <div class="shadow"></div>
 
-    <!-- Count down clock -->
-    <div class="container">
-        
-        <!-- counter -->
-        <header>
-            <div class="content">
-                <h1 class="mb-0">COMING SOON</h1>
-                <div class="countdown mt-0">  00 : 00 : 00 : 00 </div>
-            </div>
-        </header>
-        <hr>
-        <div class="shadow" style="height: 454.5px;"></div>
-        <!-- About US section -->
-        <div class="container-fluid">
+        <div class="container" style="box-shadow: 10px 10px 5px #ccc;">
             <div class="row row-content" id="aboutUs">
-                <div class="col-xl-12">
+                <div class="col-12-xl">
                     <div class="card">
-                        <h1 class="card-header"> About Us </h1>
-                        <div class="card-body">
-                            <a href="https://imgur.com/MbH2BpN" class="rounded"><img src="https://i.imgur.com/MbH2BpN.jpg" title="source: imgur.com" /></a>
-                            <div class="card-body">
-                                <h5 class="card-header bg-secondary text-center"> Our Family </h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            </div>
+                        <div class="col-6-xl border border-dark p-0" id="ourFamily">
+                            <h5 class="card-header bg-secondary text-center "> Our Family </h5>
+                            <p class="m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Accusamus voluptate dolores tenetur iusto praesentium. Excepturi eaque ut, sint possimus blanditiis in, laudantium 
+                                mollitia cumque delectus nisi libero consequuntur provident aspernatur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi maiores ad labore. 
+                                Temporibus asperiores qui praesentium quis ab, err
+                                minima perspiciatis neque eius. Dolores deleniti iure unde tempora, vero ad!</p>
+                            </br>
+                            <p class="m-4">As a developer, I hope to make this webpage into something that everyone may be able to
+                                use. </p>
+                            </br>
+                        </div>
+                        <div class="card-img">
+                            <a href="https://imgur.com/MbH2BpN" class="img"><img src="https://i.imgur.com/MbH2BpN.jpg" title="source: imgur.com" /></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Blog -->
+    <!-- Blog -->
+
         <div class="row row-content" id="blogDiv">
-            <h1> Blog </h1>
+            <div class="col ml-5 mr-5 bg-white">
+                <h1 class="text-center"> Blog </h1> 
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item"> <a href="#tabOne" role="tab" data-toggle="tab" class="nav-link"> Tab 1 </a> </li>
+                    <li class="nav-item"> <a href="#tabTwo" role="tab" data-toggle="tab" class="nav-link"> Tab 2 </a> </li>
+                    <li class="nav-item"> <a href="#tabThree" role="tab" data-toggle="tab" class="nav-link"> Tab 3 </a> </li>
+                </ul>
+                
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" role="tabpanel" id="tabOne">
+                        <h3>Header</h3>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat reiciendis, eum, ducimus libero, ipsum impedit doloribus corrupti consectetur blanditiis illum aut. Provident fugit assumenda expedita pariatur? Enim, ducimus? Minima.</p>
+                    </div>
+                    <div class="tab-pane fade" role="tabpanel" id="tabTwo">
+                        <h3>Header 2 </h3>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat reiciendis, eum, ducimus libero, ipsum impedit doloribus corrupti consectetur blanditiis illum aut. Provident fugit assumenda expedita pariatur? Enim, ducimus? Minima.</p>
+                    </div>
+                    <div class="tab-pane fade" role="tabpanel" id="tabThree">
+                        <h3>Header 3 </h3>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat reiciendis, eum, ducimus libero, ipsum impedit doloribus corrupti consectetur blanditiis illum aut. Provident fugit assumenda expedita pariatur? Enim, ducimus? Minima.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Social-Media -->
+    <!-- Social-Media -->
         <div class="row row-content" id="regDiv">
-            <h1> Social-media & Registry </h1>
+            <div class="col">
+                <h1> Social-media & Registry </h1>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- footer Here -->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col">
-
+            <div class="row row-content">
+                <div class="col text-center bg-white">
+                    <h2>This is a footer</h2>
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="Counter.js"></script>
 </body>
 

@@ -1,6 +1,8 @@
 const counterBtn = document.querySelector('.counterBtn button');
 const secCountBtn = document.querySelector('.secCountBtn button');
 
+
+
 let countNum = document.querySelector('.countNum h1');
 let countNum2 = document.querySelector('.countNum2 h1');
 
@@ -18,36 +20,7 @@ function secCountUp(){
     countNum2.innerHTML ++;
 }
 
-// function countdown() {
-//     var now = new Date();
-//     var eventDate = new Date(2020, 9, 26);
 
-//     var currentTime = now.getTime();
-//     var eventTime = eventDate.getTime();
-
-//     var remainderTime = eventTime - currentTime;
-
-//     var s = Math.floor(remainderTime / 1000);
-//     var m = Math.floor(s / 60);
-//     var h = Math.floor(m / 60);
-//     var d = Math.floor(h / 24);
-
-//     h %= 24;
-//     m %= 60;
-//     s %= 60;
-
-//     h = (h < 10) ? "0" + h : h;
-//     m = (m < 10) ? "0" + m : m;
-//     s = (s < 10) ? "0" + s : s;
-
-//     document.getElementById("days").textContent = d;
-//     document.getElementById("hours").textContent = h;
-//     document.getElementById("minutes").textContent = m;
-//     document.getElementById("seconds").textContent = s;
-
-//     setTimeout(countdown, 1000);
-// }
-// countdown();
 function tick (){
     let now = new Date().getTime();
     let t = dueDate - now;

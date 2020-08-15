@@ -43,3 +43,25 @@ header .content .countdown {
     font-size: 80px;
     font-weight: 900;
 }
+
+#ourFamily{ 
+    width: 50%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+img {
+    float: right;
+    width: 50%;
+    height: 50%;
+    /* padding: 30px; */
+    margin: 20px;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
