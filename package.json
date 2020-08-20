@@ -1,7 +1,6 @@
 {
   "name": "babypage",
   "version": "1.0.0",
-  "description": "",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +16,14 @@
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "sass": "^1.26.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinLieuNinja/babypage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KevinLieuNinja/babypage/issues"
+  },
+  "homepage": "https://github.com/KevinLieuNinja/babypage#readme",
+  "description": ""
 }

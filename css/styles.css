@@ -55,13 +55,33 @@ img {
     float: right;
     width: 50%;
     height: 50%;
-    /* padding: 30px; */
     margin: 20px;
+    border-radius: 5px;
     box-shadow: 10px 10px 5px #ccc;
 }
 
 .tab-content {
     border: 1px solid #DDD;
     border-top: none;
+    border-radius: 5px;
     padding: 10px;
+}
+
+#blogDiv {
+    border-radius: 5px;
+}
+
+
+ul .nav-tabs {
+text-align: center;
+}
+
+#btnStyle {
+    font-size: 100px;
+    box-shadow: 10px 10px 5px  grey;
+}
+
+#voted {
+    font-weight: bold;
+    text-shadow: 10px 10px 5px  grey;
 }
