@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Baby Count Down</title>
@@ -22,7 +24,7 @@
         </ul>
     </div>
     <!-- counter -->
-    <header class="container">
+    <header class="container" style="box-shadow: 10px 10px 5px rgb(32, 30, 30);">
         <div class="content">
             <h1 class="mb-0">COMING SOON</h1>
             <div class="countdown mt-0"> 00 : 00 : 00 : 00 </div>
@@ -30,9 +32,7 @@
     </header>
     <!-- About US section -->
     <section>
-        <div class="shadow"></div>
-
-        <div class="container" style="box-shadow: 10px 10px 5px #ccc;">
+        <div class="container mt-5" style="box-shadow: 10px 10px 5px rgb(32, 30, 30);">
             <div class="row row-content" id="aboutUs">
                 <div class="col-12-xl">
                     <div class="card">
@@ -61,9 +61,8 @@
         </div>
 
         <!-- Blog -->
-        <div class="container pl-0 pr-0 mt-5">
+        <div class="container mt-5">
             <div class="col pl-0 pr-0 bg-white" id="blogDiv">
-                <h1 class="text-center mb-0"> Blog </h1>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item"> <a href="#tabOne" role="tab" data-toggle="tab" class="nav-link"> First
                             Trimester </a> </li>
@@ -74,7 +73,7 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" role="tabpanel" id="tabOne">
-                        <h3>Header</h3>
+                        <h1>Header</h1>
                         <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
                             placeat reiciendis, eum, ducimus libero, ipsum impedit doloribus corrupti consectetur
                             blanditiis illum aut. Provident fugit assumenda expedita pariatur? Enim, ducimus? Minima.
@@ -112,7 +111,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-content mt-5 text-center">
+        </div>
+        <div class="container mt-5">
+            <div class="row row-content text-center">
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
@@ -142,16 +143,59 @@
             </div>
         </div>
         <!-- Social-Media -->
-        <div class="row row-content" id="regDiv">
-            <div class="col">
-                <h1> Social-media & Registry </h1>
+        <div class="container mt-5 bg-white" style="border-radius: 5px;">
+            <h1 class="text-center"> Social-media & Registry </h1>
+            <div class="row row-content">
+                <div class="col-md-8 mx-auto">
+                    <div class="carousel slide" id="regDiv" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#regDiv" data-slide-to="0" class="active"></li>
+                            <li data-target="#regDiv" data-slide-to="1"></li>
+                            <li data-target="#regDiv" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/kenjisan_925"><i
+                                        class="fa fa-instagram"></i></a>
+    
+                                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+    
+                                <div class="carousel-item active">
+                                    <img src="https://i.imgur.com/N4vTv6M.jpg?1" id="socialImg">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item active">
+                                    <img src="https://i.imgur.com/QZQqNmW.jpg?1" id="socialImg">
+                                </div>
+                                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/kenjisan_925"><i
+                                        class="fa fa-instagram"></i></a>
+    
+                                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/kenjisan_925"><i
+                                        class="fa fa-instagram"></i></a>
+    
+                                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                                        class="fa fa-facebook"></i></a>
+    
+                                <div class="carousel-item active">
+                                    <img src="https://i.imgur.com/TLtUkgK.jpg?1" id="socialImg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- footer Here -->
     <footer>
-        <div class="container">
+        <div class="container mt-5">
             <div class="row row-content">
                 <div class="col text-center bg-white">
                     <h2>This is a footer</h2>
@@ -160,16 +204,10 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <script src="Counter.js"></script>
 </body>
 

@@ -30,6 +30,7 @@ header {
     background-image: url("https://i.imgur.com/lXq3wy7.jpg");
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
     
 }
 header .content h1 {
@@ -71,9 +72,9 @@ img {
     border-radius: 5px;
 }
 
-
-ul .nav-tabs {
-text-align: center;
+#myTab {
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 #btnStyle {
@@ -84,4 +85,17 @@ text-align: center;
 #voted {
     font-weight: bold;
     text-shadow: 10px 10px 5px  grey;
+}
+
+.tab-pane h3{
+    font-weight: 100px;
+}
+
+.container {
+    padding: 0;
+    box-shadow: 10px 10px 5px rgb(32, 30, 20);
+}
+
+#socialImg {
+    border: red 1px;
 }
